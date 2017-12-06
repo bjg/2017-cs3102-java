@@ -11,7 +11,11 @@ public class Main {
     public static void main(String[] args) {
         String []words = readWords(FILENAME, NUMWORDS);
 
+
+        ArrayList<String> al = new ArrayList<>( Arrays.asList(words) );
+
         // 1. Write code to test method findShortest()
+        findShortest(words);
 
         // 2. Write code to test method countThreeOrFiveLetterWords()
 
@@ -24,15 +28,19 @@ public class Main {
         // 6. Write code to test method removeFourLetterWords()
     }
 
-    /*
+
     // 1. Write code to find the shortest and longest word in the list (5 Marks)
-    private static String[] findShortest(String[] words) {
+    private static String[] findShortestAndLongest(String[] words) {
         String shortest;
+
+        ArrayList<String> al = new ArrayList<>( Arrays.asList(words) );
 
         // Your code goes here ...
 
         return shortest;
     }
+
+    /*
 
     // 2. Write code to count how any 3- and 5-letter words are in the list (5 Marks)
     private static String countThreeOrFiveLetterWords(String[] words) {
@@ -96,6 +104,7 @@ public class Main {
         } catch (java.io.IOException e) {
             System.err.println("File: " + filename + " could not be found.");
         }
+
         return words;
     }
 }
