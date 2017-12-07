@@ -24,7 +24,8 @@ public class Main {
 
 
         t = new Timer();
-        String[] letters = new String[]{"a", "d", "c", "e", "i", "k", "f", "j"};
+        //String[] letters = new String[]{"a", "d", "c", "e", "i", "k", "f", "j"};
+        String[] letters = new String[]{"a", "a", "a", "a", "a", "a", "a", "a"};
         MergeSort.sort(letters);
         System.err.println("Sorted in: " + t.duration() + "ms");
 
